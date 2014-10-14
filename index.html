@@ -1,23 +1,20 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Document</title>
-  
-  <script>
-
-      var colorsForWidget = ['red', 'green', 'blue'];
-
-      var ColorsWidget = (function() {
-        
-      })();
-
-      
-  </script>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="css/screen.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/lodash.js"></script>
+    <script src="js/ColorsWidget.js"></script>
+    <script>
+      $(document).ready(function(){
+          var colorsForWidget = ['red', 'green', 'blue'];
+          ColorsWidget.init('#colors', colorsForWidget);
+      })
+    </script>
 </head>
 <body>
-    <ul id="colors">
-      
-    </ul>
+    <div id="colors"></div>
 </body>
 </html>
